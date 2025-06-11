@@ -1,30 +1,123 @@
-body {
-  background-color: rgb(234, 235, 235);
-  margin: 0;
-}
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #fff;
+    color: #111;
+  }
+  
+  
+  /* Barre de navigation */
+  .site-header {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 2rem;
+    background: white;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 0 24px
-}
+  
+ 
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  
+  .cart {
+    font-size: 1rem;
+  }
+  
+  
+  .intro {
+    text-align: center;
+    margin: 6rem 1rem;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  
+  /* Galerie */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  
+  .gallery img {
+    width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.02);
+  }
 
-.logo {
-  width: 180px;
-}
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+  }
+  
+  .artwork {
+    text-align: center;
+  }
+  
+  .artwork img {
+    width: 300px;
+    height: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .artwork img:hover {
+    transform: scale(1.02);
+  }
+  
+  .artwork figcaption {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    color: #111;
+  }
+  * {
+    font-family: 'Libre Franklin', sans-serif;
+  }
 
-.link {
-  text-decoration: none;
-  font-size: 24px;
-  background-color: purple;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 4px;
-}
-
-.links {
-  display: flex;
-  gap: 24px;
-}
+  

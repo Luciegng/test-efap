@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panier – Posterra.</title>
+
+  <!-- Police Libre Franklin -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .cart-link {
+      font-size: 1rem;
+      text-decoration: none;
+      color: black;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .empty {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 1rem;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 3rem 2rem;
+      font-size: 0.95rem;
+      background: #fdfdfd;
+    }
+
+    footer a {
+      color: #111;
+      text-decoration: underline;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    .footer-left,
+    .footer-right {
+      flex: 1;
+    }
+
+    .footer-center {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .newsletter-form button {
+      padding: 0.75rem 1.5rem;
+      background: #111;
+      color: #fff;
+      border: none;
+      font-family: 'Libre Franklin', sans-serif;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="toutes-les-oeuvres.html">Toutes les œuvres</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </nav>
+    <div class="logo">Posterra.</div>
+    <a href="panier.html" class="cart-link">🛒 0</a>
+  </header>
+
+  <main>
+    <h1>Panier</h1>
+    <p class="empty">Votre panier est vide.</p>
+    <button class="btn">Poursuivre vos achats</button>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        Conçu avec <a href="https://www.squarespace.com" target="_blank">Squarespace</a>
+      </div>
+      <div class="footer-center">
+        <p>Inscrivez-vous avec votre adresse e-mail afin de recevoir les actualités et les mises à jour.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Adresse e-mail" required>
+          <button type="submit">S’inscrire</button>
+        </form>
+      </div>
+      <div class="footer-right">©Posterra.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

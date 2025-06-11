@@ -1,22 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
+  <title>Posterra.</title> 
+  
+
+  <!-- Import de la police Libre Franklin -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Ton fichier CSS externe si besoin -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Global */
+    body {
+      margin: 0;
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    /* HEADER */
+    .site-header {
+      padding: 1rem 2rem;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #111;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .cart {
+      font-size: 1.2rem;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .artwork {
+      text-align: center;
+    }
+
+    .artwork img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .artwork figcaption {
+      margin-top: 0.5rem;
+    }
+
+    /* SECTION CONTACT */
+    .contact-wrapper {
+      background-color: #d8d8d8;
+      padding: 4rem 2rem;
+    }
+
+    .contact-block {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-image-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-frame {
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-frame img {
+      display: block;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .contact-info {
+      flex: 1;
+      max-width: 400px;
+    }
+
+    .contact-info h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact-info a {
+      color: #111;
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #fdfdfd;
+      padding: 3rem 2rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .footer-left,
+    .footer-right {
+      flex: 1;
+    }
+
+    .footer-center {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .footer-center p {
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 100%;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .newsletter-form button {
+      padding: 0.75rem 1.5rem;
+      background: #111;
+      color: #fff;
+      border: none;
+      font-family: 'Libre Franklin', sans-serif;
+      cursor: pointer;
+    }
+
+    .footer a {
+      text-decoration: underline;
+      color: #111;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="navbar">
-    <img src="images/logo.png" class="logo">
-    <div class="links">
-      <a href="" class="link">Présentation</a>
-      <a href="" class="link">Team</a>
-      <a href="" class="link">Contact</a>
-    </div>
-  </div>
-  <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21024.440578343652!2d2.471468055215674!3d48.79992753289848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60cf0a32d86a9%3A0xb0dd0b84be904e3d!2sSaint-Maur-des-Foss%C3%A9s!5e0!3m2!1sfr!2sfr!4v1745400993941!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+  <header class="site-header">
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="toutes-les-oeuvres.html">Toutes les œuvres</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+      <div class="logo">Posterra.</div>
+      <a href="panier.html">🛒 0</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>L’art s’invite chez vous.
+       </h1>
+    </section>
+
+    <section class="gallery">
+      <figure class="artwork">
+        <img src="./images 1/images copie/  copie 6.jpg" alt="Fraise">
+        <figcaption>Fraise</figcaption>
+      </figure>
+      <figure class="artwork">
+        <img src="./images 1/images copie/  copie 3.jpg" alt="Vermeil">
+        <figcaption>Vermeil</figcaption>
+      </figure>
+      <figure class="artwork">
+        <img src="./images 1/images copie/Wild Seeds , Web.jpg" alt="Dune">
+        <figcaption>Dune</figcaption>
+      </figure>
+    </section>
+
+    <section class="gallery">
+        <figure class="artwork">
+          <img src="./images 1/images copie/  copie 2.jpg" alt="Fraise">
+          <figcaption>Fraise</figcaption>
+        </figure>
+        <figure class="artwork">
+          <img src="./images 1/images copie/e.jpg" alt="Vermeil">
+          <figcaption>Vermeil</figcaption>
+        </figure>
+        <figure class="artwork">
+          <img src="./images 1/images copie/Greed.jpg" alt="Dune">
+          <figcaption>Dune</figcaption>
+        </figure>
+      </section>
+
+    <section class="contact-wrapper">
+      <div class="contact-block">
+        <div class="contact-image-container">
+          <div class="image-frame">
+            <img src="./images 1/images copie/ .jpg" alt="Oeuvre en noir et blanc">
+          </div>
+        </div>
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>Pour les affiches personnalisées ou pour toute question, n’hésitez pas à nous contacter :</p>
+          <p>
+            <a href="mailto:email@email.com">posterra@gmail.com</a><br>
+            +33 1 37 07 72 12
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          Conçu avec <a href="https://www.squarespace.com" target="_blank">Squarespace</a>
+        </div>
+        <div class="footer-center">
+          <p>Inscrivez-vous avec votre adresse e-mail afin de recevoir les actualités et les mises à jour.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Adresse e-mail" required>
+            <button type="submit">S’inscrire</button>
+          </form>
+        </div>
+        <div class="footer-right">
+          ©Posterra.
+        </div>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>

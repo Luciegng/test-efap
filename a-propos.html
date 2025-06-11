@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos - Posterra.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'Libre Franklin', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: black;
+      background: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      margin-right: 1.5em;
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+
+    .cart {
+      font-size: 1em;
+    }
+
+    main {
+      padding: 3em 2em;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+
+    p {
+      font-size: 1.5em;
+      line-height: 1.6;
+      margin-bottom: 2em;
+      max-width: 700px;
+    }
+
+    .fine {
+      font-size: 1em;
+      color: #333;
+      border-top: 1px solid #ccc;
+      padding-top: 2em;
+    }
+
+    /* Contact + Footer styles */
+    .contact-wrapper {
+      background-color: #d6d6d6;
+      padding: 4em 2em;
+    }
+
+    .contact-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5em;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .contact-image-container .image-frame {
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 1em;
+    }
+
+    .contact-image-container img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .contact-info h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+
+    .contact-info p {
+      font-size: 1.1em;
+      margin: 0.5em 0;
+    }
+
+    .contact-info a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    footer.footer {
+      background: white;
+      padding: 2em 1em;
+      border-top: 1px solid #ccc;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+
+    .footer-inner p, .footer-inner a {
+      font-size: 1em;
+      color: black;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input[type="email"] {
+      padding: 0.5em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-right: none;
+      outline: none;
+    }
+
+    .newsletter-form button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .contact-block {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .newsletter-form {
+        width: 100%;
+      }
+
+      .newsletter-form input[type="email"] {
+        flex: 1;
+        width: 70%;
+      }
+
+      .newsletter-form button {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="toutes-les-oeuvres.html">Toutes les œuvres</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+    <div class="title">Posterra.</div>
+    <a class="cart" href="panier.html">🛒 0</a>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>À propos</h1>
+
+    <p>
+        Posterra. est une entreprise française dédiée à la mise en lumière des talents émergents.
+        Nous sélectionnons avec soin des affiches créées par de petits créateurs et artistes indépendants, pour vous proposer une collection unique, originale et accessible.
+        Notre mission : soutenir la création locale et vous offrir de quoi embellir vos murs avec du sens et du style.
+    </p>
+
+    <p class="fine">
+        Chaque mur raconte une histoire.
+        Chez Posterra., nous croyons en la beauté des choses simples et sincères. Pas besoin de suivre les tendances ou de paraître parfait : l’important, c’est d’exprimer ce qui vous ressemble.
+        Nos affiches sont là pour ça — mettre en valeur vos goûts, vos émotions, votre univers.
+    </p>
+  </main>
+
+  <!-- CONTACT -->
+  <section class="contact-wrapper">
+    <div class="contact-block">
+      <div class="contact-image-container">
+        <div class="image-frame">
+          <img src="./images 1/images copie/ .jpg" alt="Affiche Posterra">
+        </div>
+      </div>
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Pour les affiches personnalisées ou toute question :</p>
+        <p>
+          <a href="mailto:posterra@gmail.com">posterra@gmail.com</a><br>
+          +33 1 37 07 72 12
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        Conçu avec <a href="https://www.squarespace.com" target="_blank">Squarespace</a>
+      </div>
+      <div class="footer-center">
+        <p>Recevez nos actualités :</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Adresse e-mail" required>
+          <button type="submit">S’inscrire</button>
+        </form>
+      </div>
+      <div class="footer-right">
+        © Posterra.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
